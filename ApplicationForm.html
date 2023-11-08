@@ -1,0 +1,131 @@
+<html>
+<head>
+     <style>
+	   input[type=text]:focus{
+	     background-color:blue;
+	   }
+	 </style>
+</head>
+<body>
+  <form action="success.html"target="blank">
+      <fieldset>
+	  <legend align="center"><h2>ApplicationForm</h2></legend>
+	  <table align="center" style="border-collapse:collapse" bgcolor="#BFC9CA" height=600px width=600px>
+	  <tr>
+	  <td><label for="fname">FirstName</label></td>
+	  <td><input type="text" name="fname" placeholder="priya" required></td>
+	  </tr>
+	  <tr>	  
+	  <td><label for="lname">LastName</label></td>
+	  <td><input type="text" name="lname" value="ch"></td>
+	  </tr>
+	  <tr>	  
+	  <td><label for="mail">Email address</label></td>
+	  <td><input type="Email" name="mail"></td>
+	  </tr>
+	  <tr>	  
+	  <td><label for="pwd">Password</label></td>
+	  <td><input type="password"name="pwd"></td>
+	  </tr> 
+	  <tr>	  
+	  <td><label for="cpwd" >Confirm Password</label></td>
+	  <td><input type="password" name="cpwd"></td>
+	  </tr>
+	  <tr>		
+	  <td><label for="mobile">Mobile Number</label></td>
+	  <td><select><option value=+91>+91</option>
+                  <option value=+92>+92</option>	
+                  <option value=+93>+93</option>
+				  <option value=+94>+94</option>
+				  <option value=+95>+95</option></select><input type="tel" name="mobile" pattern="[0-9]{10}" size="14"></td>
+	  </tr>
+	  
+	 <tr>
+	 <td><label for="clg">choose your college name</label></td>
+	 <td>
+	   <input list="college" name="clg">
+	   <datalist id="college">
+	   <option value="gvp">
+	   <option value="Raghu">
+	   <option value="jntu">
+	   <option value="Au">
+	   <option value="Anits">
+	   </datalist>
+	 </td>
+	 </tr>
+	 <tr>
+	 <td>
+	  Address</td>
+	  <td> <textarea placeholder="comments" col=6 row=8 style="resize:none" size=25></textarea>
+	 </td>
+	 </tr>
+	  <tr>
+	  <td>Gender</td>
+	  <td>
+	    <input type="radio" name="gender">
+	    <label for="gender">Male</label>
+	  </td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	   <td>
+	   <input type="radio" name="gender">
+	   <label for="gender">Female</label>
+	   </td>
+	 </tr>
+	 <tr>
+	  <td>Choose your skills</td>
+	  <td>
+	  <input type="checkbox" name="skills" checked>
+	  <label for="skills">Java</label>
+	  </td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	  <td><input type="checkbox" name="skills">
+	  <label for="skills">SQL</label></td>
+	  </tr>
+	  
+	  <tr>
+	   <td></td>
+	  <td><input type="checkbox" name="skills">
+	      <label for="skills">HTML CSS</label></td>
+	  </tr>
+	  
+	  <tr>
+	  <td></td>
+	  <td><input type="checkbox" name="skills">
+	      <label for="skills">Spring Boot</label></td>
+	  </tr>
+	  
+	  <tr>
+	    <td><label for="exp">Experience(2 to 10)</label></td>
+	    <td><input type="number" name="exp" min=2 max=10></td>
+	  </tr>
+	  
+	  <tr>
+	  <td><label for="bday">Choose Your DOB</label></td>
+	    <td>  <input type="date" name="bday"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td><label for="res">Resume</label></td>
+	   <td>  <input type="file" name="res"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td><input type="checkbox" name=agree required>
+	      <label for=agree>Agree terms and conditions</label></td>
+	  </tr>
+	  
+	  <tr>
+	  <th colspan=2><input type="submit" value="submit"></th>
+	  </tr>
+	  </table>
+	  </fieldset>
+	  
+	  </form>
+	  
+</body>
+
+</html>
